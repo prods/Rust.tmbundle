@@ -30,5 +30,3 @@ A TextMate Bundle for the Rust programming language.
 ## License
 
 This bundle is licensed under the MIT License (LICENSE.txt).
-
-Copyright (c) 2012 [Tom Ellis](http://www.webmuse.co.uk/)
