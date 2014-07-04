@@ -338,7 +338,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(self)\b</string>
+			<string>\b(self|super)\b</string>
 			<key>name</key>
 			<string>variable.language.rs</string>
 		</dict>

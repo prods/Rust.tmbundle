@@ -25,6 +25,7 @@ A TextMate Bundle for the Rust programming language.
 - Compile and Compile with test options logic was rewritten using ruby interface. Now it does not fail to compile due to permission errors.
 - Syntax Highlight: 
 	- Added mut to modifiers
+	- super added to language variables
 
 
 ## License
