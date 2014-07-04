@@ -1,6 +1,6 @@
-# Rust TextMate Bundle
+# Rust TextMate Bundle 
 
-A TextMate Bundle for the Rust programming langauage.
+A TextMate Bundle for the Rust programming language.
 
 ##Current Features:
 
@@ -11,19 +11,20 @@ A TextMate Bundle for the Rust programming langauage.
 - Code Snippets
 - Supports both .rs and .rc file formats (Rust and Rust Crates)
 
-##Future Features:
-
-- Improved Syntax Highlighting
 
 ##Installation
 
-- Download either the zip or tar
-- Unzip
-- Rename SUB folder Rust_tmbundle to Rust.tmbundle
-- Double click above folder (installs in TextMate)
-- Enjoy
+- Open the terminal and run install.sh
+
+```
+./install.sh
+```
 
 
+##Changes:
+- Compile and Compile with test options logic was rewritten using ruby interface. Now it does not fail to compile due to permission errors.
+- Syntax Highlight: 
+	- Added mut to modifiers
 
 
 ## License

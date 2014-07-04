@@ -302,7 +302,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(const|export|extends|final|implements|native|private|protected|public|static|synchronized|throws|transient|volatile)\b</string>
+			<string>\b(const|export|extends|final|implements|native|private|protected|public|static|synchronized|throws|transient|volatile|mut)\b</string>
 			<key>name</key>
 			<string>storage.modifier.rs</string>
 		</dict>
