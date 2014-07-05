@@ -5,16 +5,33 @@
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-		require ENV["TM_SUPPORT_PATH"] + "/lib/tm/executor"
-		require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
+	<string>#!/usr/bin/env ruby18
+require ENV["TM_SUPPORT_PATH"] + "/lib/tm/executor"
+require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
 
-		filepath = ENV["TM_FILEPATH"];
+TextMate.save_if_untitled('rs')
+TextMate::Executor.make_project_master_current_document
 
-		TextMate.save_if_untitled('rs')
-		TextMate::Executor.make_project_master_current_document
+file_path = ENV["TM_FILEPATH"]
+main_found = false
 
-		TextMate::Executor.run("/usr/local/bin/rustc", "-L", ".", filepath)
+File.open(file_path, "r+").each_line do |line|
+  fmt_line = line.strip!
+  if fmt_line != nil
+    if fmt_line.index("fn main()") == 0
+      main_found = true
+      break
+    end
+  end
+end
+
+if main_found == true
+  # Compile executable
+  TextMate::Executor.run("/usr/local/bin/rustc", "-L", ".", file_path)
+else
+  # Compile Library
+  TextMate::Executor.run("/usr/local/bin/rustc", "--crate-type=lib", "-L", ".", file_path)
+end
 
 		file =  File.basename(filepath, ".rs");
 		path = File.dirname(filepath);
