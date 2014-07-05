@@ -19,7 +19,7 @@ result = '';
 
 if( !File.exist?( fullpath ) )
 	puts "Compiled Rust file doesn't exist, compiling… &lt;br /&gt;\n";
-	result = system("/usr/local/bin/rustc " + filepath);
+	result = system("/usr/local/bin/rustc -L . " + filepath);
 	puts "&lt;br /&gt;&lt;br /&gt;";
 	
 end

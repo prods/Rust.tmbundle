@@ -12,19 +12,18 @@ require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
 TextMate.save_if_untitled('rs')
 TextMate::Executor.make_project_master_current_document
 
-TextMate::Executor.run("/usr/local/bin/rustc", "--test", "-L", ".", ENV["TM_FILEPATH"])
-</string>
+TextMate::Executor.run("/usr/local/bin/rustc", "--crate-type=lib", "-L", ".", ENV["TM_FILEPATH"])</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
-	<string>@A</string>
+	<string>@l</string>
 	<key>name</key>
-	<string>Compile with tests</string>
+	<string>Compile Library</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.rs</string>
 	<key>uuid</key>
-	<string>AE3EDDD9-4C26-4107-AFB3-23E80044C531</string>
+	<string>85D39C00-B364-4647-B58A-A89CD3C0292A</string>
 </dict>
 </plist>

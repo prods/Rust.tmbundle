@@ -12,7 +12,7 @@ require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
 TextMate.save_if_untitled('rs')
 TextMate::Executor.make_project_master_current_document
 
-TextMate::Executor.run("/usr/local/bin/rustc", ENV["TM_FILEPATH"])</string>
+TextMate::Executor.run("/usr/local/bin/rustc", "-L", ".", ENV["TM_FILEPATH"])</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>

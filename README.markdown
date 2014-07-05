@@ -14,6 +14,7 @@ A TextMate Bundle for the Rust programming language.
 
 
 ##New Features:
+- Compile library command. (cmd+l)
 - Compile and Run commands were rewritted using the Textmate ruby interface.
 - Compile and Run command. Compiles and runs the app using one shortcut (cmd+b).
 - Extended Syntax hightlighting (in progress).
