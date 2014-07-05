@@ -19,6 +19,7 @@ A TextMate Bundle for the Rust programming language.
 - Extended Syntax hightlighting (in progress).
 	- *mut* modifier.
 	- *self* and *super* variables
+	- @ operator
 
 
 
