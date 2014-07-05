@@ -17,9 +17,9 @@ A TextMate Bundle for the Rust programming language.
 - Compile and Run commands were rewritted using the Textmate ruby interface.
 - Compile and Run command. Compiles and runs the app using one shortcut (cmd+b).
 - Extended Syntax hightlighting (in progress).
-	- *mut* modifier.
+	- *pub* and *mut* modifier.
 	- *self* and *super* variables
-	- @ operator
+	- @ operator (obsolete on 0.11)
 
 
 
