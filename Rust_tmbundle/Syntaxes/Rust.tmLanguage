@@ -314,7 +314,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(delete|in|instanceof|new|typeof|with|as)\b</string>
+			<string>\b(delete|in|instanceof|new|typeof|with|as|box)\b</string>
 			<key>name</key>
 			<string>keyword.operator.rs</string>
 		</dict>

@@ -20,6 +20,7 @@ A TextMate Bundle for the Rust programming language.
 - Extended Syntax hightlighting (in progress).
 	- *pub* and *mut* modifier.
 	- *self* and *super* variables
+	- new *box* operator (replaces *~* on 0.11)
 	- @ operator (obsolete since 0.11)
 
 
